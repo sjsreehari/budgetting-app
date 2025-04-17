@@ -11,8 +11,7 @@ function App() {
       <Navbar />
       <main className="flex-grow">
         <Routes>
-          <Route path="/" element={<Navigate to="/budget" replace />} />
-          <Route path="/budget" element={<Budget />} />
+          <Route path="/" element={<Budget />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
