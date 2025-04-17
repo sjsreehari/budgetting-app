@@ -4,7 +4,9 @@
       {
         "src": "package.json",
         "use": "@vercel/static",
-        "config": { "distDir": "dist" }
+        "config": {
+          "distDir": "dist"
+        }
       }
     ],
     "routes": [
@@ -13,5 +15,7 @@
         "dest": "/index.html"
       }
     ],
-    "framework": "vite"
+    "framework": "vite",
+    "installCommand": "npm install --legacy-peer-deps",
+    "buildCommand": "npm run build"
   }
